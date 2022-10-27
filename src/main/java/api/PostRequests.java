@@ -13,7 +13,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
 
 public class PostRequests {
 
-    private static String urlString = "http://restapi.adequateshop.com/api/authaccount/login";
+    private static String loginUrl = "http://restapi.adequateshop.com/api/authaccount/login";
     private static String responseCode;
     private static String responseBody;
     private static String accessToken;
@@ -25,7 +25,7 @@ public class PostRequests {
     public static void login(String email, String password) throws IOException {
         // Build the post request
         String postBody = "{\"email\":\"" + email + "\", " + "\"password\":\"" + password + "\"}";
-        HttpPost postLogin = new HttpPost(urlString);
+        HttpPost postLogin = new HttpPost(loginUrl);
         postLogin.setEntity(new StringEntity(postBody));
         postLogin.setHeader("Content-type", "application/json");
         HttpClient httpClient = HttpClientBuilder.create().build();
