@@ -1,5 +1,6 @@
 package api;
 
+import helpers.JsonParser;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -15,12 +16,14 @@ public class GetRequests {
     private static String responseCode;
     private static String responseBody;
 
-    public static void main(String[] args) throws IOException {
-        HttpGet getUsers         = new HttpGet(urlString);
+
+    public static void getPageUser() throws IOException {
+
+        HttpGet getUsers = new HttpGet(urlString);
         getUsers.setHeader("Content-type", "application/json");
         getUsers.setHeader("Authorization", accessToken);
-        HttpClient httpClient    = HttpClientBuilder.create().build();
-        HttpResponse response    = httpClient.execute(getUsers);
+        HttpClient httpClient = HttpClientBuilder.create().build();
+        HttpResponse response = httpClient.execute(getUsers);
         responseCode = response.getStatusLine().toString();
 
         //Parse the response body
@@ -31,9 +34,27 @@ public class GetRequests {
             responseBody = new ResponseReader().convertStreamToString(instream);
             instream.close();
         }
-
+        if(responseCode.contains("200") == true){
+            JsonParser json = new JsonParser();
+            accessToken = json.getAccessToken(responseBody);
+        }
         System.out.println(responseCode);
         System.out.println(responseBody);
 
+
+
+    }
+    public void setAccessToken(String accessToken) {
+        GetRequests.accessToken ="bearer " + accessToken;
+    }
+    public String getAccessToken(){
+        return accessToken;
+    }
+
+    public static String getResponseCode(){
+        return responseCode;
+    }
+    public static String getResponseBody(){
+        return responseBody;
     }
 }

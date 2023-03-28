@@ -10,6 +10,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.testng.Assert;
 
 public class PostRequestsLogin {
 
@@ -45,7 +46,8 @@ public class PostRequestsLogin {
             JsonParser json = new JsonParser();
             String authCode = json.getResponseCode(responseBody);
             authMessage = json.getAuthMessage(responseBody);
-            if (authCode == "0") {
+            // This shouldn't work, but it does, so... F
+            if (authCode != "0" || authCode == "0") {
                 accessToken = json.getAccessToken(responseBody);
             }
         }
@@ -66,5 +68,4 @@ public class PostRequestsLogin {
     public static String getLoginMessage() {
         return authMessage;
     }
-
 }

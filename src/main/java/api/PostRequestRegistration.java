@@ -6,7 +6,10 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.HttpClients;
+import org.testng.Assert;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,6 +18,7 @@ import java.io.UnsupportedEncodingException;
 public class PostRequestRegistration {
 
     private static String registrationUrl = "http://restapi.adequateshop.com/api/authaccount/registration";
+
     private static String responseCode;
     private static String responseBody;
     private static String accessToken;
@@ -23,12 +27,19 @@ public class PostRequestRegistration {
 
     public static void registrationUser(String name, String email, String password) throws IOException {
         //Build post registration request
-        String postBody = "{\"name\":\"" + name + "\", " + "\" email\":\"" + email + "\", " + "\"password\":\"" + password + "\"}";
+        String postBody = "{\"name\":\"" + name + "\", " + "\"email\":\"" + email + "\", " + "\"password\":\"" + password + "\"}";
+
+
         HttpPost postRegistration = new HttpPost(registrationUrl);
+
+
         postRegistration.setEntity(new StringEntity(postBody));
+
+
         postRegistration.setHeader("Content-type", "application/json");
         HttpClient httpClient = HttpClientBuilder.create().build();
         HttpResponse response = httpClient.execute(postRegistration);
+
         responseCode = response.getStatusLine().toString();
 
         HttpEntity entity = response.getEntity();
