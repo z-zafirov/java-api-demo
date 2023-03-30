@@ -19,19 +19,12 @@ public class RegistrationAndLogin {
      static String responseCode;
      private static ConfigJson getData = new ConfigJson();
 
-  //  static String FancyData = " {\n" +
-  //          "    \"url\": \"http://restapi.adequateshop.com/api\",\n" +
-  //          "    \"email\": \"asdkjhsdk@asdjh.som\",\n" +
-  //          "    \"name\": \"Zohkjhri\",\n" +
-  //          "    \"password\": \"lsdkjlsdkj@#$\",\n" +
-  //          "}";
     @BeforeTest
     public static void credentials() {
         email = getDate.getData(1);
         name = getDate.getData(2);
         password = getDate.getData(3);
     }
-
     public static String getAccessToken(String in) {
         String[] json = in.split(",");
         System.out.println(in);
@@ -47,8 +40,6 @@ public class RegistrationAndLogin {
         System.out.println(accessToken);
         return accessToken;
     }
-
-
     @Test
     public static void TesssT() {
         String something;

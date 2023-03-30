@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc01cb65-29ea-4a20-94cb-da44cb1bf12f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/GetRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GetRequests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" afterDir="false" />
     </list>
@@ -308,67 +305,102 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
-          <line>36</line>
+          <line>29</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
-          <line>38</line>
+          <line>31</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
-          <line>40</line>
+          <line>33</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
-          <line>42</line>
+          <line>35</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
-          <line>44</line>
+          <line>37</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
-          <line>46</line>
+          <line>39</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>23</line>
+          <line>12</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>24</line>
+          <line>13</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>25</line>
+          <line>14</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>29</line>
+          <line>18</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>30</line>
+          <line>19</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>31</line>
+          <line>20</line>
           <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
-          <line>52</line>
+          <line>43</line>
           <properties class="tests.RegistrationAndLogin" method="TesssT">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -377,7 +409,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>22</line>
+          <line>11</line>
           <properties class="helpers.ConfigJson" method="postRegistrationUrl">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -386,7 +418,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
-          <line>28</line>
+          <line>17</line>
           <properties class="helpers.ConfigJson" method="postLoginRequestUrl">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
