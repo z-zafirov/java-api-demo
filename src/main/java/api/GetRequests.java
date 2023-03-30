@@ -1,5 +1,6 @@
 package api;
 
+import helpers.ConfigJson;
 import helpers.JsonParser;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -9,9 +10,10 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
+
 public class GetRequests {
 
-    private static String urlString = "http://restapi.adequateshop.com/api/users?page=1";
+    //private static String urlString = "http://restapi.adequateshop.com/api/users?page=1";
     private static String accessToken;
     private static String responseCode;
     private static String responseBody;
@@ -19,7 +21,12 @@ public class GetRequests {
 
     public static void getPageUser() throws IOException {
 
-        HttpGet getUsers = new HttpGet(urlString);
+        //HttpGet getUsers = new HttpGet(urlString);
+        ConfigJson url = new ConfigJson();
+        String getUrl = url.getRequestUrl();
+        HttpGet getUsers = new HttpGet(getUrl);
+        //опит
+        System.out.println(getUsers);
         getUsers.setHeader("Content-type", "application/json");
         getUsers.setHeader("Authorization", accessToken);
         HttpClient httpClient = HttpClientBuilder.create().build();

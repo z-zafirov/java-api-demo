@@ -1,9 +1,11 @@
 package api;
 
+import helpers.ConfigJson;
 import helpers.JsonParser;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -26,15 +28,17 @@ public class PostRequestRegistration {
 
 
     public static void registrationUser(String name, String email, String password) throws IOException {
+        ConfigJson registrationUrl = new ConfigJson();
+
+        String registUrl = registrationUrl.postRegistrationUrl();
+
         //Build post registration request
         String postBody = "{\"name\":\"" + name + "\", " + "\"email\":\"" + email + "\", " + "\"password\":\"" + password + "\"}";
 
-
-        HttpPost postRegistration = new HttpPost(registrationUrl);
-
-
+       HttpPost postRegistration = new HttpPost(registUrl);
+        //принт
+        System.out.println(postRegistration);
         postRegistration.setEntity(new StringEntity(postBody));
-
 
         postRegistration.setHeader("Content-type", "application/json");
         HttpClient httpClient = HttpClientBuilder.create().build();

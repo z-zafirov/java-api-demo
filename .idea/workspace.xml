@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc01cb65-29ea-4a20-94cb-da44cb1bf12f" name="Changes" comment="" />
+    <list default="true" id="cc01cb65-29ea-4a20-94cb-da44cb1bf12f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/GetRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GetRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,32 +59,6 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.RegistrationAndLogin">
-    <configuration name="GetRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="api.GetRequests" />
-      <module name="java-api-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helpers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JsonParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="helpers.JsonParser" />
-      <module name="java-api-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helpers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PostRequestsLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.PostRequestsLogin" />
       <module name="java-api-demo" />
@@ -87,6 +68,23 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationAndLogin (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-api-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationAndLogin" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +100,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.RegistrationAndLogin" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationAndLogin.TesssT" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java-api-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.RegistrationAndLogin" />
+      <option name="METHOD_NAME" value="TesssT" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -129,6 +145,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RegistrationAndLogin" />
+        <item itemvalue="TestNG.RegistrationAndLogin (1)" />
+        <item itemvalue="TestNG.RegistrationAndLogin.TesssT" />
         <item itemvalue="TestNG.RegistrationAndLogin.testLogin" />
       </list>
     </recent_temporary>
@@ -160,52 +178,52 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>48</line>
+          <line>63</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>49</line>
+          <line>64</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>54</line>
+          <line>69</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>56</line>
+          <line>71</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>32</line>
+          <line>47</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>35</line>
+          <line>50</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>39</line>
+          <line>54</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>40</line>
+          <line>55</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>42</line>
+          <line>57</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestRegistration.java</url>
-          <line>44</line>
+          <line>59</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -220,42 +238,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>37</line>
+          <line>45</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>44</line>
+          <line>52</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>51</line>
+          <line>60</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>47</line>
+          <line>55</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>49</line>
+          <line>58</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>45</line>
+          <line>53</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>50</line>
+          <line>59</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/PostRequestsLogin.java</url>
-          <line>38</line>
+          <line>46</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -287,6 +305,93 @@
           <url>file://$PROJECT_DIR$/src/main/java/helpers/JsonParser.java</url>
           <line>11</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java</url>
+          <line>52</line>
+          <properties class="tests.RegistrationAndLogin" method="TesssT">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>22</line>
+          <properties class="helpers.ConfigJson" method="postRegistrationUrl">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/helpers/ConfigJson.java</url>
+          <line>28</line>
+          <properties class="helpers.ConfigJson" method="postLoginRequestUrl">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

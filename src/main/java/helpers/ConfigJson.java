@@ -1,38 +1,52 @@
 package helpers;
 
+import org.apache.http.impl.nio.reactor.SessionRequestImpl;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.net.*;
 
 public class ConfigJson {
-    private static URL base;
-    private static URL home;
+    private static String base;
+    private static String baseUrl;
+     private static String protocol = "http://";
 
-  //  public static void baseUrl(){
-  //      String partUr = "registration";
-  //      JSONObject url = new JSONObject();
-  //      url.put("url", "http://restapi.adequateshop.com/api/authaccount/");
-  //      String completeUrl =  url + partUr;
-  //  }
-    public static void RegistrationData(){
-        JSONObject name =  new JSONObject();
-        name.put("name","Petq");
-        JSONObject email = new JSONObject();
-        email.put("email", "Petq_123rt@vhd.com");
-        JSONObject password = new JSONObject();
-        password.put("password", "!eddfffdf12_R");
+    private static String FancyData = " {\n" +
+            "    \"url\": \"restapi.adequateshop.com/api\",\n" +
+            "    \"email\": \"asdkjhsdk@asdjh.som\",\n" +
+            "    \"name\": \"Zohkjhri\",\n" +
+            "    \"password\": \"lsdkjlsdkj@#$\",\n" +
+            "}";
+    private static String home;
+
+
+    public static String postRegistrationUrl() {
+        baseUrl = getData(0);
+        home = String.format(protocol + baseUrl + "/AuthAccount/Registration");
+        System.out.println(home);
+        return home;
     }
-    public static void getUrl() throws MalformedURLException {
-        base = new URL("http://restapi.adequateshop.com/api/authaccount");
+    public static String postLoginRequestUrl() {
+        baseUrl = getData(0);
+        home  =  String.format(protocol + baseUrl + "/AuthAccount/Login");
+        System.out.println(home);
+        return home;
     }
-    public static void postRegistrationUrl() throws MalformedURLException {
-        home = new URL(base, "/registration");
+    public static String getRequestUrl() {
+        baseUrl = getData(0);
+        home = String.format(protocol +  baseUrl + "/users?page=1");
+        System.out.println(home);
+        return home;
     }
-    public static void postLoginRequestUrl() throws MalformedURLException {
-        home  = new URL(base,"/login");
+    public static String getData( int number) {
+        String[] json = FancyData.split(",");
+        String data = json[number];
+        data = data.replace("{", "");
+        String[] key = data.split(":");
+        String value = key[1];
+        String message = value.replace("\"", "");
+        return message;
     }
-    public static void getRequestUrl() throws MalformedURLException {
-        home = new URL(base, "/users?page=1");
-    }
+
 
 }

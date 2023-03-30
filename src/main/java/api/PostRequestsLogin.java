@@ -3,6 +3,7 @@ package api;
 import java.io.IOException;
 import java.io.InputStream;
 
+import helpers.ConfigJson;
 import helpers.JsonParser;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -14,7 +15,7 @@ import org.testng.Assert;
 
 public class PostRequestsLogin {
 
-    private static String loginUrl = "http://restapi.adequateshop.com/api/authaccount/login";
+    //private static String loginUrl = "http://restapi.adequateshop.com/api/authaccount/login";
     private static String responseCode;
     private static String responseBody;
     private static String accessToken;
@@ -26,8 +27,14 @@ public class PostRequestsLogin {
     public static void login(String email, String password) throws IOException {
         // Build the post request
         String postBody = "{\"email\":\"" + email + "\", " + "\"password\":\"" + password + "\"}";
-        HttpPost postLogin = new HttpPost(loginUrl);
+        ConfigJson loginUrl = new ConfigJson();
+        String url = loginUrl.postLoginRequestUrl();
+
+        HttpPost postLogin = new HttpPost(url);
+        //да опитам
+        System.out.println(postLogin);
         postLogin.setEntity(new StringEntity(postBody));
+
         postLogin.setHeader("Content-type", "application/json");
         HttpClient httpClient = HttpClientBuilder.create().build();
         // Execute the post request
