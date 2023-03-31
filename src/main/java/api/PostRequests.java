@@ -20,6 +20,14 @@ public class PostRequests {
     private static String authMessage;
 
     public static void main(String[] args) {
+        String email = "zdravko.zafirov+2@gmail.com";
+        String password = "123456";
+        try {
+            login(email, password);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        printAccessToken();
     }
 
     public static void login(String email, String password) throws IOException {
@@ -45,7 +53,7 @@ public class PostRequests {
             JsonParser json = new JsonParser();
             String authCode = json.getResponseCode(responseBody);
             authMessage = json.getAuthMessage(responseBody);
-            if (authCode == "0") {
+            if (authCode.equals("0")) {
                 accessToken = json.getAccessToken(responseBody);
             }
         }
@@ -65,6 +73,10 @@ public class PostRequests {
 
     public static String getLoginMessage() {
         return authMessage;
+    }
+
+    public static void printAccessToken() {
+        System.out.println(accessToken);
     }
 
 }

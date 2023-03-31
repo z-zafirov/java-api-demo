@@ -52,7 +52,7 @@
       <recent name="api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationAndLogin">
+  <component name="RunManager" selected="Application.PostRequests">
     <configuration name="PostRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.PostRequests" />
       <module name="java-api-demo" />
@@ -129,9 +129,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PostRequests" />
+        <item itemvalue="Application.api.GetRequests" />
         <item itemvalue="TestNG.RegistrationAndLogin" />
         <item itemvalue="TestNG.RegistrationAndLogin.testLogin" />
-        <item itemvalue="Application.api.GetRequests" />
         <item itemvalue="Application.helpers.JsonParser" />
       </list>
     </recent_temporary>
