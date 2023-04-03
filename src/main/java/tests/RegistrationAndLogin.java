@@ -17,13 +17,13 @@ public class RegistrationAndLogin {
     private static String password;
     private static  String name;
      static String responseCode;
-     private static ConfigJson getData = new ConfigJson();
 
     @BeforeTest
     public static void credentials() {
-        email = getDate.getData(1);
-        name = getDate.getData(2);
-        password = getDate.getData(3);
+
+        email = getDate.getData(2);
+        name = getDate.getData(3);
+        password = getDate.getData(4);
     }
     public static String getAccessToken(String in) {
         String[] json = in.split(",");
