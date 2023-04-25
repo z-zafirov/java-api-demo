@@ -1,6 +1,6 @@
 package tests;
 
-import api.PostRequests;
+import api.PostLogin;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -20,31 +20,31 @@ public class RegistrationAndLogin {
 
     @Test
     public static void testSuccessfulLogin() throws IOException {
-        PostRequests postRequests = new PostRequests();
-        postRequests.login(email, password);
-        String responseCode = postRequests.getResponseCode();
+        PostLogin postLogin = new PostLogin();
+        postLogin.login(email, password);
+        String responseCode = postLogin.getResponseCode();
         Assert.assertTrue(responseCode.contains("200"), responseCode);
-        String authMessage = postRequests.getLoginMessage();
+        String authMessage = postLogin.getLoginMessage();
         Assert.assertTrue(authMessage.contains("success"), authMessage);
     }
 
     @Test
     public static void testWrongPassword() throws IOException {
-        PostRequests postRequests = new PostRequests();
-        postRequests.login(email, "123450");
-        String responseCode = postRequests.getResponseCode();
+        PostLogin postLogin = new PostLogin();
+        postLogin.login(email, "123450");
+        String responseCode = postLogin.getResponseCode();
         Assert.assertTrue(responseCode.contains("200"), responseCode);
-        String authMessage = postRequests.getLoginMessage();
+        String authMessage = postLogin.getLoginMessage();
         Assert.assertTrue(authMessage.contains("invalid"), authMessage);
     }
 
     @Test
     public static void testWrongUsername() throws IOException {
-        PostRequests postRequests = new PostRequests();
-        postRequests.login("test@test.com", password);
-        String responseCode = postRequests.getResponseCode();
+        PostLogin postLogin = new PostLogin();
+        postLogin.login("test@test.com", password);
+        String responseCode = postLogin.getResponseCode();
         Assert.assertTrue(responseCode.contains("200"), responseCode);
-        String authMessage = postRequests.getLoginMessage();
+        String authMessage = postLogin.getLoginMessage();
         Assert.assertTrue(authMessage.contains("invalid"), authMessage);
     }
 

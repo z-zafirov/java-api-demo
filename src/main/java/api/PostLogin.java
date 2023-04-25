@@ -11,7 +11,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 
-public class PostRequests {
+public class PostLogin {
 
     private static String loginUrl = "http://restapi.adequateshop.com/api/authaccount/login";
     private static String responseCode;

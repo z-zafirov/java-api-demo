@@ -8,7 +8,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class GetRequests {
+public class GetUsers {
 
     private static String urlString = "http://restapi.adequateshop.com/api/users?page=1";
     private static String accessToken;

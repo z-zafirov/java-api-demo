@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cc01cb65-29ea-4a20-94cb-da44cb1bf12f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/PostRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PostRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/GetRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GetUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/PostRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PostLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FOAy3kDp46ThORVm3teuai5atk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,9 +56,22 @@
       <recent name="api" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PostRequests">
-    <configuration name="PostRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="api.PostRequests" />
+  <component name="RunManager" selected="Application.GetRegister">
+    <configuration name="GetRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="api.GetRegister" />
+      <module name="java-api-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetUsers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="api.GetUsers" />
       <module name="java-api-demo" />
       <extension name="coverage">
         <pattern>
@@ -66,21 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="api.GetRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="api.GetRequests" />
-      <module name="java-api-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="helpers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="helpers.JsonParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="helpers.JsonParser" />
+    <configuration name="PostLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="api.PostLogin" />
       <module name="java-api-demo" />
       <extension name="coverage">
         <pattern>
@@ -129,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PostRequests" />
-        <item itemvalue="Application.api.GetRequests" />
+        <item itemvalue="Application.GetRegister" />
+        <item itemvalue="Application.PostLogin" />
+        <item itemvalue="Application.GetUsers" />
         <item itemvalue="TestNG.RegistrationAndLogin" />
         <item itemvalue="TestNG.RegistrationAndLogin.testLogin" />
-        <item itemvalue="Application.helpers.JsonParser" />
       </list>
     </recent_temporary>
   </component>
