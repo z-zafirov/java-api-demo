@@ -14,7 +14,7 @@ public class RegistrationAndLogin {
 
     @BeforeTest
     public static void credentials() {
-        email = "zdravko.zafirov+1@gmail.com";
+        email = "zdravko.zafirov+2@gmail.com";
         password = "123456";
     }
 
