@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc01cb65-29ea-4a20-94cb-da44cb1bf12f" name="Changes" comment="">
+    <list default="true" id="c43453bb-6524-4d42-9fc9-d2eb325df4da" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/GetRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GetUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/PostRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PostLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/GetRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GetRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

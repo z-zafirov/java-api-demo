@@ -16,25 +16,23 @@ public class GetRegister {
     public static void setCookie() {
         try {
             // Instantiate CookieManager;
-            // make sure to set CookiePolicy
             CookieManager manager = new CookieManager();
-            manager.setCookiePolicy(CookiePolicy.ACCEPT_ALL);
             CookieHandler.setDefault(manager);
 
             // get content from URLConnection;
-            // cookies are set by web site
             URL url = new URL(urlString);
             URLConnection connection = url.openConnection();
             connection.getContent();
 
-            // get cookies from underlying
-            // CookieStore
+            // get cookies from underlying CookieStore
             CookieStore cookieJar =  manager.getCookieStore();
-            List<HttpCookie> cookies =
-                    cookieJar.getCookies();
+            List<HttpCookie> cookies = cookieJar.getCookies();
+
+            // loop through the cookies and pick the JSESSIONID one
             for (HttpCookie cookie: cookies) {
-                // It is only one cookie value that matters, but in case of many - loop through them:
-                responseCookie = String.valueOf(cookie);
+                if (String.valueOf(cookie).contains("JSESSIONID")) {
+                    responseCookie = String.valueOf(cookie);
+                }
             }
         } catch(Exception e) {
             System.out.println("Unable to get cookie using CookieHandler");
