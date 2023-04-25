@@ -3,6 +3,12 @@ package api;
 import java.net.*;
 import java.util.List;
 
+/*
+* Info about the implementation taken from:
+* https://docs.oracle.com/javase/tutorial/deployment/doingMoreWithRIA/accessingCookies.html
+*/
+
+
 public class GetRegister {
     private static String urlString = "https://parabank.parasoft.com/parabank/register.htm";
     private static String responseCode;
