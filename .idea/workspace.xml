@@ -65,15 +65,9 @@
       <recent name="api" />
     </key>
   </component>
-<<<<<<< HEAD
   <component name="RunManager" selected="Application.PostRequests">
     <configuration name="PostRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.PostRequests" />
-=======
-  <component name="RunManager" selected="Application.ReadConfig">
-    <configuration name="ReadConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="helpers.ReadConfig" />
->>>>>>> 76cf2276ab22a38edffe61328d78ded56c2f633a
       <module name="java-api-demo" />
       <extension name="coverage">
         <pattern>
