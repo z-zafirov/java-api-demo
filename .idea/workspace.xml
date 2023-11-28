@@ -42,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/webdrivers/apache.http/lib&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2850575&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/zdrav/Projects/Java/java-api-demo/src/main/java/libraries/apache.http/lib",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.40574712"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zdrav\Projects\JQA_homeworks\ZornitsaStefanova\java-api-demo\target\classes" />
@@ -65,15 +65,9 @@
       <recent name="api" />
     </key>
   </component>
-<<<<<<< HEAD
   <component name="RunManager" selected="Application.PostRequests">
     <configuration name="PostRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.PostRequests" />
-=======
-  <component name="RunManager" selected="Application.ReadConfig">
-    <configuration name="ReadConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="helpers.ReadConfig" />
->>>>>>> 76cf2276ab22a38edffe61328d78ded56c2f633a
       <module name="java-api-demo" />
       <extension name="coverage">
         <pattern>
@@ -153,19 +147,10 @@
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
         <item itemvalue="Application.PostRequests" />
         <item itemvalue="Application.api.GetRequests" />
         <item itemvalue="TestNG.RegistrationAndLogin" />
         <item itemvalue="TestNG.RegistrationAndLogin.testLogin" />
-        <item itemvalue="Application.helpers.JsonParser" />
-=======
-        <item itemvalue="Application.ReadConfig" />
-        <item itemvalue="TestNG.RegistrationAndLogin.testSuccessfulLogin" />
-        <item itemvalue="TestNG.RegistrationAndLogin" />
-        <item itemvalue="TestNG.RegistrationAndLogin.testLogin" />
-        <item itemvalue="Application.api.GetRequests" />
->>>>>>> 76cf2276ab22a38edffe61328d78ded56c2f633a
       </list>
     </recent_temporary>
   </component>
