@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc01cb65-29ea-4a20-94cb-da44cb1bf12f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/RegistrationAndLogin.java" afterDir="false" />
-    </list>
+    <list default="true" id="cc01cb65-29ea-4a20-94cb-da44cb1bf12f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +62,7 @@
       <recent name="api" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PostRequests">
+  <component name="RunManager" selected="TestNG.RegistrationAndLogin">
     <configuration name="PostRequests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="api.PostRequests" />
       <module name="java-api-demo" />
@@ -147,9 +144,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RegistrationAndLogin" />
+        <item itemvalue="TestNG.RegistrationAndLogin.testSuccessfulLogin" />
         <item itemvalue="Application.PostRequests" />
         <item itemvalue="Application.api.GetRequests" />
-        <item itemvalue="TestNG.RegistrationAndLogin" />
         <item itemvalue="TestNG.RegistrationAndLogin.testLogin" />
       </list>
     </recent_temporary>
