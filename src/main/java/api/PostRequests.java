@@ -13,70 +13,67 @@ import org.apache.http.impl.client.HttpClientBuilder;
 
 public class PostRequests {
 
-    private static String loginUrl = "http://restapi.adequateshop.com/api/authaccount/login";
+    private static String baseUrl = "https://dummy.restapiexample.com/api/v1";
+    private static String createUrl = "/create";
     private static String responseCode;
     private static String responseBody;
-    private static String accessToken;
-    private static String authMessage;
+
 
     public static void main(String[] args) {
-        String email = "zdravko.zafirov+2@gmail.com";
-        String password = "123456";
+        String name = "zdravko zafirov";
+        String salary = "123,45";
+        Integer age = 23;
         try {
-            login(email, password);
+            createRequest(name, salary, age);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        printAccessToken();
+        printResponseBody();
     }
 
-    public static void login(String email, String password) throws IOException {
-        // Build the post request
-        String postBody = "{\"email\":\"" + email + "\", " + "\"password\":\"" + password + "\"}";
-        HttpPost postLogin = new HttpPost(loginUrl);
+    public static void createRequest(String name, String salary, Integer age) throws IOException {
+        // Build the post body (json)
+        String jName = "\"name\": \"" + name + "\"";
+        //System.out.println("JSON name: " + jName);
+        String jSalary = "\"salary\": \"" + salary + "\"";
+        //System.out.println("JSON salary: " + jSalary);
+        String jAge = "\"age\": " + age;
+        //System.out.println("JSON age: " + jAge);
+        String postBody = "{" + jName + "," + jSalary + "," + jAge + "}";
+        //System.out.println("Post body string: " + postBody);
+        // Build the request itself (headers+body)
+        HttpPost postLogin = new HttpPost(baseUrl+createUrl);
         postLogin.setEntity(new StringEntity(postBody));
         postLogin.setHeader("Content-type", "application/json");
         HttpClient httpClient = HttpClientBuilder.create().build();
         // Execute the post request
         HttpResponse response = httpClient.execute(postLogin);
+        // Read the response code
         responseCode = response.getStatusLine().toString();
         // Fill in the response body
-        HttpEntity entity = response.getEntity();
-        if (entity != null) {
+        HttpEntity responseObject = response.getEntity();
+        if (responseObject != null) {
             // A Simple JSON Response Read
-            InputStream instream = entity.getContent();
+            InputStream instream = responseObject.getContent();
             responseBody = new ResponseReader().convertStreamToString(instream);
             instream.close();
         }
-        // Extract and set the access token
-        if (responseCode.contains("200") == true) {
-            JsonParser json = new JsonParser();
-            String authCode = json.getResponseCode(responseBody);
-            authMessage = json.getAuthMessage(responseBody);
-            if (authCode.equals("0")) {
-                accessToken = json.getAccessToken(responseBody);
-            }
-        }
+
     }
 
-    public static String getAccessToken() {
-        return accessToken;
-    }
+
 
     public static String getResponseCode() {
         return responseCode;
     }
 
     public static String getResponseBody() {
-        return responseCode;
+        return responseBody;
     }
 
-    public static String getLoginMessage() {
-        return authMessage;
-    }
 
-    public static void printAccessToken() {
-        System.out.println(accessToken);
+    public static void printResponseBody() {
+        System.out.println(responseBody);
     }
 
 }
